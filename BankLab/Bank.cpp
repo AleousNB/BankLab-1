@@ -24,7 +24,7 @@ std::string Bank::ShowAccounts()
 	for (Account account : _accounts)
 	{		
 		//TODO: Display as Account Number - LastName, FirstName - Balance
-		output += std::to_string(account.getAccountNumber()) += "\n";
+		output += std::to_string(account.getAccountNumber()) + " - " + std::to_string(account.getBalance()) + "\n";
 	}
 	return output;
 }
