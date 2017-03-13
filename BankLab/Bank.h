@@ -14,7 +14,8 @@ public:
 
 	std::string getName();
 	void CreateAccount(Account newAccount);
-	std::string ShowAccounts();
+	//not sure how to access customer name so passed it in through function parameter
+	std::string ShowAccounts(std::string name);
 	std::string ListAccounts();
 
 	void Deposit(int accountNumber, int amount);
